@@ -2,14 +2,14 @@ import React , { useState } from 'react';
 
 import './App.css';
 import About from './components/About';
-import { BrowserRouter , Link , Route , Redirect, Switch, useHistory } from "react-router-dom";
+import { HashRouter , Link , Route , Redirect, Switch, useHistory } from "react-router-dom";
 import Navbar from './components/Navbar';
 import IdkLol from './components/IdkLol';
 
 function App() {
   
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Navbar/>
     <Switch>
     <Route exact path="/">
@@ -25,7 +25,7 @@ function App() {
       <IdkLol/>
     </Route>
     </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
